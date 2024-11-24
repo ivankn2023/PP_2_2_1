@@ -22,12 +22,12 @@ public class MainApp {
 
 
       User user2 = new User("User2", "Lastname2", "user2@mail.ru");
-      user1.setCar(new Car(1234, "Audi"));
+      user2.setCar(new Car(1234, "Audi"));
       userService.add(user2);
 
 
       User user3 = new User("User3", "Lastname3", "user3@mail.ru");
-      user1.setCar(new Car(12345, "Mercedes"));
+      user2.setCar(new Car(12345, "Mercedes"));
       userService.add(user3);
 
       userService.add(new User("User4", "Lastname4", "user4@mail.ru"));
@@ -44,7 +44,7 @@ public class MainApp {
 
 
 
-      User finduser = userService.getUserByCarSettings("BMW", 123);
+      User finduser = userService.getUserByCarSettings("Audi", 1234);
       System.out.println("-----------");
       System.out.println(finduser);
       System.out.println("-----------");
